@@ -65,8 +65,7 @@ class Title(models.Model):
         'Дата выпуска',
         validators=[MaxValueValidator(timezone.now().year),
                     MinValueValidator(0)
-                    ]
-        )
+                    ])
     category = models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,

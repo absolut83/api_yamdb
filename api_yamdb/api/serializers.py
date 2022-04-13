@@ -1,4 +1,3 @@
-from django.utils import timezone
 from rest_framework import serializers
 
 from reviews.models import (SCORE_CHOICES, Category, Comment, Genre, Review,
@@ -129,4 +128,3 @@ class TitlesCreateSerializer(serializers.ModelSerializer):
         fields = (
             'id', 'name', 'year', 'description', 'genre', 'category'
         )
-
